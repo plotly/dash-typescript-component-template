@@ -1,0 +1,3 @@
+git+git://github.com/plotly/dash.git@typescript-component-generator#egg=dash[dev]
+wheel
+build

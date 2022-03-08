@@ -1,0 +1,2 @@
+recursive-include src/py/**/assets/** *.js *.css *.json *.html
+prune tests
