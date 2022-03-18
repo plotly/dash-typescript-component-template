@@ -1,2 +1,2 @@
-recursive-include src/py/**/assets/** *.js *.css *.json *.html
+recursive-include {{cookiecutter.project_shortname}}/** *.js *.css *.json *.html
 prune tests
