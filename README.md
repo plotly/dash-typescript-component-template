@@ -64,7 +64,6 @@ And remove `React.` in `React.ButtonHTMLAttributes`
 
 Final solution would be:
 ```
-```
 import React, { ButtonHTMLAttributes }  from 'react'
 
 type Props = {
