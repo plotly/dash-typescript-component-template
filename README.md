@@ -42,3 +42,35 @@ To use this template:
     - [`dash-cytoscape`](https://github.com/plotly/dash-cytoscape)
     - [`dash-deck`](https://github.com/plotly/dash-deck)
     - [Curated community-made components](https://plotly.com/dash-community-components/)
+
+## Limitations TS imports
+When importing types or interfaces from 3rd party modules such as React. You need to explicitly reference the interface and not use the Namespace.
+
+Example
+```
+import React from 'react'
+
+type Props = {
+    /**
+     * Variant is the name of a variation of the button so that buttons can vary very variably.
+     */
+    variant: 'yellow' | 'green';
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
+``` 
+
+You need to change the import to:
+`import React, {ButtonHTMLAttributes}  from 'react'`
+And remove `React.` in `React.ButtonHTMLAttributes` 
+
+Final solution would be:
+```
+```
+import React, { ButtonHTMLAttributes }  from 'react'
+
+type Props = {
+    /**
+     * Variant is the name of a variation of the button so that buttons can vary very variably.
+     */
+    variant: 'yellow' | 'green';
+} & ButtonHTMLAttributes<HTMLButtonElement>
+``` 
