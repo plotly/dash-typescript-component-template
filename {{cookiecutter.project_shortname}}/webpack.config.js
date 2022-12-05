@@ -38,7 +38,7 @@ module.exports = function (env, argv) {
         target: 'web',
         externals,
         resolve: {
-            extensions: ['.ts', '.tsx'],
+            extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
         },
         module: {
             rules: [
