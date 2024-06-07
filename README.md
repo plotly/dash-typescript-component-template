@@ -1,5 +1,12 @@
 # Dash TypeScript Component Template
 
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
+
 This repository contains a [Cookiecutter](https://github.com/audreyr/cookiecutter) template to create your own Dash components with TypeScript.
 
 - New to Dash? Check out the [official Dash Documentations](https://dash.plotly.com)
