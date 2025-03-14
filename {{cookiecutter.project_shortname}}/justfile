@@ -27,8 +27,8 @@ package: clean build
 
 # Publish the package to pypi using twine.
 publish: package
-    {% if cookiecutter.publish_on_npm %}npm publish{% endif %}
-    twine upload dist/*
+    {% if cookiecutter.publish_on_npm %}npm publish
+    {% endif %}twine upload dist/*
 
 # Remove dist & build directories
 clean:
