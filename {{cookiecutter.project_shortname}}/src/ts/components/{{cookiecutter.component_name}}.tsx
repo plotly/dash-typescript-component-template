@@ -17,6 +17,4 @@ const {{cookiecutter.component_name}} = (props: Props) => {
     )
 }
 
-{{cookiecutter.component_name}}.defaultProps = {};
-
 export default {{cookiecutter.component_name}};
