@@ -36,7 +36,21 @@ pip install {{cookiecutter.project_shortname}}
    ```shell
    npm run build
    ```
+5. Code Formatting (optional):
 
+   This project uses:
+
+   - [Black](https://black.readthedocs.io/) for code formatting
+   - [isort](https://pycqa.github.io/isort/) for import sorting
+   - [Ruff](https://docs.astral.sh/ruff/) for linting
+
+   Run:
+
+   ```bash
+   black .
+   isort .
+   ruff check . --fix
+   ````
 
 ### Create a production build and publish:
 
